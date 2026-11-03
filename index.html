@@ -74,6 +74,44 @@
             text-decoration: underline;
         }
 
+        /* ===== 双按钮样式（新增） ===== */
+        .btn {
+            display: inline-block;
+            padding: 9px 22px;
+            margin-right: 14px;
+            margin-bottom: 8px;
+            border: 1px solid #3a6ea5;
+            border-radius: 8px;
+            background: #1b2735;
+            color: #a8d8ff;
+            font-size: 15px;
+            text-decoration: none;
+            transition: background .2s, border-color .2s;
+        }
+
+        .btn:hover {
+            background: #24405e;
+            border-color: #5b9bd5;
+            text-decoration: none;
+        }
+
+        .btn.alt {
+            border-color: #5a5a2a;
+            background: #26241a;
+            color: #ffd766;
+        }
+
+        .btn.alt:hover {
+            background: #3a371f;
+            border-color: #ffd766;
+        }
+
+        .hint {
+            color: #91a4b8;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
         .footer-sign {
             margin-top: 36px;
             text-align: right;
@@ -86,6 +124,32 @@
             color: #ffd766;
             margin: 28px 0;
             text-indent: 0;
+        }
+
+        /* ===== 移动端适配（新增） ===== */
+        @media (max-width: 600px) {
+            body {
+                padding: 22px 16px;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+
+            p {
+                text-indent: 1.5em;
+                line-height: 1.75;
+            }
+
+            .btn {
+                display: block;
+                margin-right: 0;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -118,7 +182,7 @@
         <p class="no-indent">本站内师生原创的文字、照片、音视频等内容，版权归对应创作者与本班级共同所有；未经书面授权，严禁擅自转载、用于任何商业用途。若本站有内容不慎侵犯您的合法权益，请联系班级管理员，我们将第一时间核实处理。</p>
 
         <h4>三、内容与责任</h4>
-        <p class="no-indent">本站所有公开内容仅代表发布者个人观点，不代表班级网站官方立场，相关责任由发布者自行承担。本站提供的学习资料、活动通知等内容仅供参考，不构成任何确定性指导建议。</p>
+        <p class="no-indent">本站所有公开内容仅代表发布者个人观点，不代表班级网站官方立场。本站内容由同学在老师指导下发布，如有疑问请联系班级管理员协商处理；站内学习资料、活动通知等仅供参考，不构成任何确定性指导建议。</p>
 
         <h4>四、隐私保护</h4>
         <p class="no-indent">本站严格保护所有班级成员的个人隐私信息，未经本人许可，不会擅自对外泄露、公开相关个人资料，共同维护安全可信的线上交流环境。</p>
@@ -127,8 +191,9 @@
     </div>
 
     <div class="link-group">
-        <a href="https://soolinejiang.github.io/classwebsite/">点击查看</a>
-        <a href="#"></a>
+        <a class="btn" href="https://soolinejiang.github.io/classwebsite/">点击查看 · 拾光文廊</a>
+        <a class="btn alt" href="https://soolinejiang.github.io/classwebsite2/">备用站点 · 文章展览</a>
+        <p class="no-indent hint">主站为完整文集（15 篇）；备用站点为镜像，更新可能略有延迟。任一站点无法访问时，可切换另一个阅读。</p>
     </div>
 
     <h2>本期美文</h2>
